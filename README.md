@@ -8,3 +8,7 @@
 - JS(ES6)
 - API
 - Webpack
+
+## Ссылка на проект:
+
+ https://eirateufel.github.io/sprint11/
