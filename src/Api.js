@@ -1,4 +1,4 @@
-class Api {
+export default class Api {
     constructor(server, cohort, token){
         this.server = server;
         this.cohort = cohort;
@@ -8,7 +8,7 @@ class Api {
     loadUserData(){
 
          //вынесено
-        return (fetch(`http://${this.server}/${this.cohort}/users/me`, {
+        return (fetch(`${this.server}/users/me`, {
             headers: {
                 authorization: `${this.token}`
             }
@@ -27,7 +27,7 @@ class Api {
     updateUserData(newName, newBio){
 
          //вынесено
-        return (fetch(`http://${this.server}/${this.cohort}/users/me`, {
+        return (fetch(`${this.server}/users/me`, {
             method: 'PATCH',
             headers: {
                 authorization: `${this.token}`,
@@ -50,7 +50,7 @@ class Api {
     }
 
     loadInitialCards(){
-        return (fetch(`http://95.216.175.5/${this.cohort}/cards`, {
+        return (fetch(`${this.server}/cards`, {
         headers: {
             authorization: `${this.token}`
         }})

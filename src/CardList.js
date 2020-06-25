@@ -1,4 +1,4 @@
-class CardList {
+export default class CardList {
   constructor(card, container, api) {
     this.card = card;
     this.container = container;
@@ -22,7 +22,7 @@ class CardList {
             link: info.link,
           };
           this.card.create(data);
-          this.addCard(card);
+          this.addCard(this.card);
         }
       })
       .catch((err)=>{

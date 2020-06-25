@@ -1,5 +1,6 @@
+import Popup from './Popup';
 
-class PopupPic extends Popup {
+export default class PopupPic extends Popup {
   constructor(){
       super();
       this.container = document.querySelector('.popup__pic').closest('.popup');

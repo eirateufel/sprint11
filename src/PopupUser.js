@@ -1,4 +1,6 @@
-class PopupUser extends PopupForm {
+import PopupForm from './PopupForm';
+
+export default class PopupUser extends PopupForm {
     constructor(user, api) {
         super();
         this.container = document.querySelector('.popup__user').closest('.popup');

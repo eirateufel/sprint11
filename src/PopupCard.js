@@ -1,4 +1,6 @@
-class PopupCard extends PopupForm {
+import PopupForm from './PopupForm';
+
+export default class PopupCard extends PopupForm {
     constructor(cardList) {
         super();
         this.container = document.querySelector('.popup__content').closest('.popup');
